@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="calculator">
+    <input id="input" type="text" autofocus>
+    <button id="AC" class="orange">AC</button> 
+    <button class="orange" id="clear"><i class="fa-solid fa-delete-left"></i></button>
+    <button class="orange" onclick="display('%')"><i class="fa-solid fa-percent"></i></button>
+    <button class="orange" onclick="display('/')"><i class="fa-solid fa-divide"></i></button>
+    <button onclick="display(7)">7</button>
+    <button onclick="display(8)">8</button>
+    <button onclick="display(9)">9</button>
+    <button class="orange" onclick="display('*')"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="display(4)">4</button>
+    <button onclick="display(5)">5</button>
+    <button onclick="display(6)">6</button>
+    <button class="orange" onclick="display('-')"><i class="fa-solid fa-minus"></i></button>
+    <button onclick="display(1)">1</button>
+    <button onclick="display(2)">2</button>
+    <button onclick="display(4)">3</button>
+    <button class="orange" onclick="display('+')"><i class="fa-solid fa-plus"></i></button>
+    <button>+/-</button>
+    <button id="num0">0</button>
+    <button onclick="display('.')">.</button>
+    <button class="orange" id="res"><i class="fa-solid fa-equals"></i></button>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
