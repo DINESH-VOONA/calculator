@@ -3,14 +3,17 @@
   padding: 0%;
   font-family: sans-serif;
 }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #calculator{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(6,1fr);
   width: 30vw;
   height: 60vh;
-  margin: auto;
-  margin-top: 5%;
   border: 0.2vw solid black;
   gap: 2%;
   padding: 2%;

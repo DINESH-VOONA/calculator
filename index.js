@@ -169,3 +169,8 @@ btndot.addEventListener("click",()=>{
         input.value += '.';
     }
 })
+
+
+//!body
+let body = document.querySelector("body");
+body.style.height = document.documentElement.scrollHeight +"px";
