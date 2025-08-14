@@ -41,9 +41,18 @@ num0.addEventListener("click",()=>{
 //! for (+) button
 let btnplus = document.getElementById("plus");
 btnplus.addEventListener("click",()=>{
-    if(input.value.charAt(input.value.length-1) == '+')
+    let ch = input.value.charAt(input.value.length-1);
+    if(input.value == "")
     {
-        input.value.charAt(input.value.length-1) == '+';
+        input.value = "";
+    }
+    else if (ch == '-' || ch == '*' || ch == '/' || ch == '%' || ch == '.')
+    {
+        input.value.charAt(input.value.length) = '';
+    }
+    else if(input.value.charAt(input.value.length-1) == '+')
+    {
+        input.value.charAt(input.value.length-1) = '+';
     }
     else
     {
@@ -54,9 +63,18 @@ btnplus.addEventListener("click",()=>{
 //! for (-) button
 let btnminus = document.getElementById("minus");
 btnminus.addEventListener("click",()=>{
-    if(input.value.charAt(input.value.length-1) == '-')
+    let ch = input.value.charAt(input.value.length-1);
+    if(input.value == "")
     {
-        input.value.charAt(input.value.length-1) == '-';
+        input.value = "";
+    }
+    else if (ch == '+' || ch == '*' || ch == '/' || ch == '%' || ch == '.')
+    {
+        input.value.charAt(input.value.length) = '';
+    }
+    else if(input.value.charAt(input.value.length-1) == '-')
+    {
+        input.value.charAt(input.value.length-1) = '-';
     }
     else
     {
@@ -67,9 +85,18 @@ btnminus.addEventListener("click",()=>{
 //! for (*) button
 let btnmul = document.getElementById("mul");
 btnmul.addEventListener("click",()=>{
-    if(input.value.charAt(input.value.length-1) == '*')
+    let ch = input.value.charAt(input.value.length-1);
+    if(input.value == "")
     {
-        input.value.charAt(input.value.length-1) == '*';
+        input.value = "";
+    }
+    else if (ch == '+' || ch == '-' || ch == '/' || ch == '%' || ch == '.')
+    {
+        input.value.charAt(input.value.length) = '';
+    }
+    else if(input.value.charAt(input.value.length-1) == '*')
+    {
+        input.value.charAt(input.value.length-1) = '*';
     }
     else
     {
@@ -80,9 +107,18 @@ btnmul.addEventListener("click",()=>{
 //! for (/) button
 let btndiv = document.getElementById("div");
 btndiv.addEventListener("click",()=>{
-    if(input.value.charAt(input.value.length-1) == '/')
+    let ch = input.value.charAt(input.value.length-1);
+    if(input.value == "")
     {
-        input.value.charAt(input.value.length-1) == '/';
+        input.value = "";
+    }
+    else if (ch == '+' || ch == '-' || ch == '*' || ch == '%' || ch == '.')
+    {
+        input.value.charAt(input.value.length) = '';
+    }
+    else if(input.value.charAt(input.value.length-1) == '/')
+    {
+        input.value.charAt(input.value.length-1) = '/';
     }
     else
     {
@@ -93,9 +129,18 @@ btndiv.addEventListener("click",()=>{
 //! for (%) button
 let btnmod = document.getElementById("mod");
 btnmod.addEventListener("click",()=>{
-    if(input.value.charAt(input.value.length-1) == '%')
+    let ch = input.value.charAt(input.value.length-1);
+    if(input.value == "")
     {
-        input.value.charAt(input.value.length-1) == '%';
+        input.value = "";
+    }
+    else if (ch == '+' || ch == '-' || ch == '/' || ch == '*' || ch == '.')
+    {
+        input.value.charAt(input.value.length) = '';
+    }
+    else if(input.value.charAt(input.value.length-1) == '%')
+    {
+        input.value.charAt(input.value.length-1) = '%';
     }
     else
     {
@@ -103,12 +148,21 @@ btnmod.addEventListener("click",()=>{
     }
 })
 
-//! for (.) button
+//! for (.) button 
 let btndot = document.getElementById("dot");
 btndot.addEventListener("click",()=>{
-    if(input.value.charAt(input.value.length-1) == '.')
+    let ch = input.value.charAt(input.value.length-1);
+    if(input.value == "")
     {
-        input.value.charAt(input.value.length-1) == '.';
+        input.value = "";
+    }
+    else if (ch == '+' || ch == '-' || ch == '/' || ch == '*' || ch == '%')
+    {
+        input.value.charAt(input.value.length) = '';
+    }
+    else if(input.value.charAt(input.value.length-1) == '.')
+    {
+        input.value.charAt(input.value.length-1) = '.';
     }
     else
     {
