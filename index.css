@@ -14,6 +14,10 @@ body{
   grid-template-rows: repeat(6,1fr);
   border: 0.2vw solid black;
   background-color: black;
+  gap: 2%;
+  padding: 2%;
+  border-radius: 1vw;
+  height: 60%;
 }
 #input{
   outline: none;
@@ -23,6 +27,8 @@ body{
   background-color: black;
   color: white;
   border: 0.2vw solid gray;
+  font-size: 2rem;
+  padding-right: 1%;
 }
 button{
   font-weight: bold;
@@ -30,45 +36,27 @@ button{
   border: 0.2vw solid black;
   border-radius: 1vw;
   color: white;
+  font-size: 1.5rem;
 }
-@media (max-width:480px)  { 
-  #calculator{
-    width: 60vw;
-    height: 70vh;
-    gap: 2%;
-    padding: 2%;
-    border-radius: 1vw;
-  }
-  #input{
-    font-size: 2rem;
-    padding-right: 1%;
-  }
-  button{
-    font-size: 1rem;
-  }
-}
-@media (min-width:481px)  { 
-  #calculator{
-    width: 30vw;
-    height: 60vh;
-    gap: 2%;
-    padding: 2%;
-    border-radius: 1vw;
-  }
-  #input{
-    font-size: 2rem;
-    padding-right: 1%;
-  }
-  button{
-    font-size: 1.5rem;
-  }
-}
-
-
 button:hover{
   cursor: pointer;
   background-color:rgb(22, 22, 22) ;
 }
 .orange{
   color: rgb(255, 119, 0);
+}
+@media (max-width:480px)  { 
+  #calculator{
+    width: 85%;
+  }
+}
+@media (min-width:480px)  { 
+  #calculator{
+    width: 50%;
+  }
+}
+@media (min-width:1080px)  { 
+  #calculator{
+    width: 30%;
+  }
 }
