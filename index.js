@@ -152,9 +152,9 @@ btnmod.addEventListener("click",()=>{
 let btndot = document.getElementById("dot");
 btndot.addEventListener("click",()=>{
     let ch = input.value.charAt(input.value.length-1);
-    if(input.value == "")
+    if(input.value === "")
     {
-        input.value = "";
+        input.value = "0.";
     }
     else if (ch == '+' || ch == '-' || ch == '/' || ch == '*' || ch == '%')
     {
@@ -174,3 +174,16 @@ btndot.addEventListener("click",()=>{
 //!body
 let body = document.querySelector("body");
 body.style.height = document.documentElement.scrollHeight +"px";
+
+//! +/- (xor):-
+let xor = document.getElementById("xor");
+xor.addEventListener("click",()=>{
+    if(!input.value.startsWith('-'))
+    {
+        input.value = '-'+ input.value;
+    }
+    else
+    {
+        input.value = input.value.slice(1,input.value.length);
+    }
+})
